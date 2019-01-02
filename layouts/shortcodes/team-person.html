@@ -1,0 +1,14 @@
+{{- $photo := .Get "photo" -}}
+{{- $name := .Get "name" -}}
+{{- $fullname := .Get "fullname" -}}
+{{- $title := .Get "title" -}}
+
+<div class="team-person">
+    <img class="team-person__photo" src="{{$photo}}" />
+    <div class="team-person__name">{{$name}}</div>
+    <div class="team-person__blurb">
+        <h4 class="team-person__fullname">{{$fullname}}</h4>
+        <p class="team-person__title">{{$title}}</p>
+        {{.Inner}}
+    </div>
+</div>

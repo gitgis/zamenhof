@@ -1,0 +1,39 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+
+  {{ .Hugo.Generator }}
+
+  {{ with .Site.Params.description }}
+  <meta name="description" content="{{ . }}">
+  {{ end }}
+
+  {{ $appleTouchIcon := "apple-touch-icon.png" }}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ $appleTouchIcon | absURL }}">
+
+  {{ $favicon32x32 := "favicon-32x32.png" }}
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32x32 | absURL }}">
+
+  {{ $favicon16x16 := "favicon-16x16.png" }}
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16x16 | absURL }}">
+
+  {{ $siteWebmanifest := "site.webmanifest" }}
+  <link rel="manifest" href="{{ $siteWebmanifest | absURL }}">
+
+  {{ $safariPinnedTab := "safari-pinned-tab.svg" }}
+  <link rel="mask-icon" href="{{ $safariPinnedTab | absURL }}" color="{{ .Site.Params.faviconSafariPinnedTabColor }}">
+
+  <meta name="msapplication-TileColor" content="{{ .Site.Params.faviconMsApplicationTileColor }}">
+
+  <meta name="theme-color" content="{{ .Site.Params.faviconThemeColor }}">
+
+  {{ $bootstrapCss := "css/bootstrap.min.css" }}
+  <link rel="stylesheet" href="{{ $bootstrapCss | absURL }}" />
+  <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}" />
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic|Roboto+Mono:300,400|Lato:400" rel="stylesheet" type="text/css">
+
+</head>

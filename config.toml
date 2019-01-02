@@ -1,0 +1,48 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Language Lessons Online with YOUR students and OUR teachers."
+theme = "zamenhof-hugo-theme"
+
+[permalinks]
+  page = "/:filename/"
+
+[params]
+
+[menu]
+
+  [[menu.main]]
+      identifier = "how-it-works"
+      name = "How It Works"
+      url = "/how-it-works/"
+      weight = 1
+
+  [[menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/about/"
+      weight = 2
+
+  [[menu.main]]
+      name = "Pricing"
+      url = "/pricing/"
+      weight = 3
+
+  [[menu.main]]
+      name = "Questions"
+      url = "http://faq.zamenhof.net/"
+      weight = 4
+
+  [[menu.main]]
+      identifier = "login"
+      name = "Login"
+      url = "https://admin.zamenhof.net/login"
+      cssClass = "tets"
+      weight = 5
+
+  [[menu.main]]
+      identifier = "request-access"
+      name = "Request Access"
+      url = "javascript:void(0);"
+      weight = 6
+
+
