@@ -1,3 +1,7 @@
-<section class="text-section container">
-    {{.Inner}}
+{{- $class := .Get "class" -}}
+
+<section class="text-section {{ $class }}">
+    <div class="container">
+        {{.Inner}}
+    </div>
 </section>
