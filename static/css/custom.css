@@ -593,3 +593,101 @@ div:last-child > .figure-dialog__img {
     cursor: pointer;
     outline: none;
 }
+
+
+
+
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+
+
+
+
+.table-sales {
+    border: 1px solid #AAA;
+}
+.table-sales thead {
+    background: #AAA;
+    color: #FFF;
+    text-align: center;
+}
+.col-sales h3 {
+    color: #AAA;
+}
+
+.table-earnings {
+    border: 1px solid #46AE35;
+}
+.table-earnings thead {
+    background: #46AE35;
+    color: #FFF;
+    text-align: center;
+}
+.col-earnings h3 {
+    color: #46AE35;
+}
+
+
+.table-profit {
+    border: 1px solid #528AFF;
+}
+.table-profit thead {
+    background: #528AFF;
+    color: #FFF;
+    text-align: center;
+}
+.col-profit h3 {
+    color: #528AFF;
+}
+
+
+.table-expenses {
+    border: 1px solid #DB2D1C;
+}
+.table-expenses thead {
+    background: #DB2D1C;
+    color: #FFF;
+    text-align: center;
+}
+.col-expenses h3 {
+    color: #DB2D1C;
+}
