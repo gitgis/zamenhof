@@ -1,3 +1,5 @@
+@import "setup-plans.css";
+
 body {
     color: #1e3a6e;
     font-family: "rawline", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -691,3 +693,4 @@ div:last-child > .figure-dialog__img {
 .col-expenses h3 {
     color: #DB2D1C;
 }
+
