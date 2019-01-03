@@ -1,0 +1,11 @@
+<div class="wistia-video">
+
+    <script src="//fast.wistia.com/embed/medias/{{ .Params.wistia_id }}.jsonp" async></script>
+    <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+    <span class="wistia_embed wistia_async_{{ .Params.wistia_id }} popover=true popoverContent=link" style="display:inline">
+        <a href="#" class="guy_play_video">
+            {{.Inner}}
+        </a>
+    </span>
+
+</div>

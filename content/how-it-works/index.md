@@ -11,32 +11,32 @@ type: "page"
 {{% /page-header %}}
 
 {{% text-section class="row-space" %}}
-{{% figure img="picture_hiw.png" %}}
+{{% figure-left img="picture_hiw.png" %}}
 
 ## STEP 1
 
 **You** install a script  
 (an application form)
 
-{{% /figure %}}
+{{% /figure-left %}}
 {{% /text-section %}}
 
 
 {{% text-section class="section-bg-grey row-space" %}}
-{{% figure img="school_per.png" %}}
+{{% figure-left img="school_per.png" %}}
 
 ## STEP 2
 
 We contact the students who  
 register on your website
 
-{{% /figure %}}
+{{% /figure-left %}}
 {{% /text-section %}}
 
 
 
 {{% text-section class="row-space" %}}
-{{% figure img="school_hiw3.png" %}}
+{{% figure-left img="school_hiw3.png" %}}
 
 
 ## STEP 3
@@ -45,11 +45,11 @@ We send a lesson plan based
 on the information collected  
 during the evaluation
 
-{{% /figure %}}
+{{% /figure-left %}}
 {{% /text-section %}}
 
 {{% text-section class="row-space section-bg-grey" %}}
-{{% figure img="school_4.png" %}}
+{{% figure-left img="school_4.png" %}}
 
 ## STEP 4
 
@@ -57,11 +57,11 @@ during the evaluation
 to the schedule in the lesson  
 plan!
 
-{{% /figure %}}
+{{% /figure-left %}}
 {{% /text-section %}}
 
 {{% text-section class="row-space" %}}
-{{% figure img="school_hiw5.png" %}}
+{{% figure-left img="school_hiw5.png" %}}
 
 ## STEP 5
 
@@ -69,13 +69,13 @@ plan!
 report about your cost & profit
 
 
-{{% /figure %}}
+{{% /figure-left %}}
 {{% /text-section %}}
 
 
 
 {{% text-section class="row-space section-bg-grey" %}}
-{{% figure img="customize.png" %}}
+{{% figure-left img="customize.png" %}}
 
 ## Customize
 
@@ -91,7 +91,7 @@ that reflects your brand your values and your mission
 * Monthly Plans
 * Courses Plans
 
-{{% /figure %}}
+{{% /figure-left %}}
 {{% /text-section %}}
 
 

@@ -1,0 +1,19 @@
+{{- $left := .Get "left-img" -}}
+{{- $right := .Get "right-img" -}}
+
+<figure class="figure-dialog">
+
+    <figcaption>
+        {{.Inner}}
+    </figcaption>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ $left }}" class="figure-dialog__img img-fluid"/>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ $right }}" class=" figure-dialog__img img-fluid"/>
+        </div>
+    </div>
+
+</figure>

@@ -121,8 +121,82 @@ ol > li {
 }
 
 .section-bg-grey {
-    background:#fafafb;
+    background: #fafafb;
     border-bottom: 1px solid #eee;
+}
+
+.section-welcome {
+    background-color: rgb(28, 66, 120);
+    color: #FFF;
+    text-align: center;
+    padding-top: 30px !important;
+}
+
+.section-welcome h2 {
+    color: #FFF;
+    text-align: center;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 54px;
+    margin: 0;
+}
+
+.section-welcome em {
+    border-bottom: 2px solid #f7931d;
+    font-style: normal;
+}
+
+.section-welcome p {
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(161, 177, 206);
+}
+
+.section-welcome {
+    height: 480px;
+}
+
+.section-welcome__computer-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.section-welcome .video-in-computer {
+    position: relative;
+    width: 80vmin;
+    height: 30vmin;
+}
+
+.video-in-computer .video-in-computer__laptop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80vmin;
+    height: 30vmin;
+}
+
+.video-in-computer .vedio3 {
+    position: absolute;
+    left: 7vmin;
+    top: 1.5vmin;
+    width: calc(0.78 * 80vmin);
+    height: calc(0.78 * 30vmin);
+}
+
+
+@media (max-width: 767px) {
+    .vedio, .vedio .vedio3, .vedio1, .vedio2 {
+        display: none;
+    }
+
+    .section-welcome .computer-screen-1 img {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
 }
 
 .text-column {
@@ -290,7 +364,7 @@ a.page-footer__important-link {
 }
 
 
-.figure__caption {
+.figure-left__caption {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,4 +396,60 @@ a.page-footer__important-link {
 .grow-section a {
     font-size: 16px;
     color: #1e3a6e !important;
+}
+
+.figure-dialog__img {
+    margin: auto;
+    display: block;
+    max-width: 65%;
+}
+
+div:first-child > .figure-dialog__img {
+    margin-right: 0;
+}
+div:last-child > .figure-dialog__img {
+    margin-left: 0;
+}
+
+.figure-dialog p {
+    text-align: center;
+}
+
+
+.figure-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.figure-icons-list p {
+    width: 100%;
+    text-align: center;
+}
+
+.figure-icons-list figure {
+    flex: 1;
+    min-width: 130px;
+    max-width: 130px;
+    padding: 0 10px;
+}
+
+.figure-icons-list figure > img {
+    margin: 0 15px;
+    width: 80px;
+}
+
+.figure-icons-list h4 {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.wistia-video img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    height: auto;
 }
