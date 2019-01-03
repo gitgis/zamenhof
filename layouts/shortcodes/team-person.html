@@ -3,8 +3,12 @@
 {{- $fullname := .Get "fullname" -}}
 {{- $title := .Get "title" -}}
 
+{{ $original := .Page.Resources.GetMatch (printf "*%s*" $photo) }}
+{{ .Scratch.Set "image" ($original.Fit "90x110 q80") }}
+{{ $image := .Scratch.Get "image" }}
+
 <div class="team-person">
-    <div class="team-person__photo" ><img src="{{$photo}}"></div>
+    <div class="team-person__photo" ><img src="{{$image.RelPermalink}}"></div>
     <div class="team-person__name">{{$name}}</div>
     <div class="team-person__blurb">
         <h4 class="team-person__fullname">{{$fullname}}</h4>

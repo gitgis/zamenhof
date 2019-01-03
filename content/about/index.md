@@ -42,7 +42,6 @@ Zamenhof was founded by Patrice Laperriere in 2012. He used to run his own onlin
 and understood the difficulty of managing a big team of teachers without the proper platform.
 Sharing online content, staff and platform is a breakthrough in the industry.
 
-
 {{% about-team %}}
 
 {{% team-person 
