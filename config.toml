@@ -1,4 +1,4 @@
-baseURL = "https://example.org/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Language Lessons Online with YOUR students and OUR teachers."
 theme = "zamenhof-hugo-theme"
@@ -7,6 +7,8 @@ theme = "zamenhof-hugo-theme"
   page = "/:filename/"
 
 [params]
+
+includeBootstrapJs = true
 
 [menu]
 
