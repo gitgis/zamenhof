@@ -57,12 +57,12 @@ Get instant access to a full library of language courses.
 
 All in one place! No other software needed
 
-{{% figure src="homepage/branded-student.png" title="Branded Student Account" %}}
-{{% figure src="homepage/billing.png" title="Billing / Payment Processor" %}}
-{{% figure src="homepage/attendance.png" title="Attendance Report" %}}
-{{% figure src="homepage/CRM.png" title="CRM" %}}
-{{% figure src="homepage/email-marketing.png" title="Email Marketing" %}}
-{{% figure src="homepage/corporate.png" title="Corporate Solution" %}}
+{{% figure src="homepage/branded-student.svg" title="Branded Student Account" %}}
+{{% figure src="homepage/billing.svg" title="Billing / Payment Processor" %}}
+{{% figure src="homepage/attendance.svg" title="Attendance Report" %}}
+{{% figure src="homepage/CRM.svg" title="CRM" %}}
+{{% figure src="homepage/email-marketing.svg" title="Email Marketing" %}}
+{{% figure src="homepage/corporate.svg" title="Corporate Solution" %}}
 
 {{% /figure-icons-list %}}
 
