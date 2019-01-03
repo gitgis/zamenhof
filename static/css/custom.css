@@ -453,3 +453,100 @@ div:last-child > .figure-dialog__img {
     max-width: 80%;
     height: auto;
 }
+
+
+
+.pricing-table {
+    width: 100%;
+}
+
+
+.pricing-table thead th {
+    text-align: center;
+}
+
+.pricing-table th {
+    padding: 8px;
+    background-color: rgba(28,66,120,.5);
+    border: 1px solid #ddd;
+}
+
+.pricing-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.pricing-table caption {
+    font-size: 12px;
+    text-align: left;
+}
+
+.pricing-header {
+    box-shadow: 0 10px 25px 0 rgba(49,49,93,0.1);
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 30px 0;
+    text-align:center;
+    max-width: 650px;
+    width: 100%;
+    color: #1e3a6e;
+    margin: 40px auto 0;
+
+}
+
+.pricing-header__invoice {
+    font-size: 28px;
+    margin: 0;
+    padding: 0 0 30px;
+    font-weight: 700;
+    border-bottom: 1px solid #1e3a6e;
+}
+.pricing-header__cost {
+    border-top: 1px solid #1e3a6e;
+    font-size: 28px;
+    margin: 0;
+    padding: 30px 0 0;
+    font-weight: 700;
+}
+.pricing-header__summary {
+    list-style: none;
+    padding: 30px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #1e3a6e;
+}
+
+.pricing-header__summary > li {
+    display: block;
+    text-align: center;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.pricing-header__summary > li strong {
+    font-size: 64px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+
+.section-pricing {
+    height: 480px;
+    margin-bottom: 160px;
+}
+
+details {
+    margin-bottom: 20px;
+}
+
+summary {
+    font-weight: 600;
+    font-size: 20px;
+}
+summary:focus {
+    outline-style: none;
+}

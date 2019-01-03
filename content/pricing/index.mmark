@@ -1,0 +1,183 @@
+---
+title: "pricing"
+date: 2019-01-02T20:24:45+01:00
+publishdate: 2019-01-02
+lastmod: 2019-01-02
+---
+
+{{% text-section class="section-welcome section-pricing" %}}
+
+## Simple, transparent pricing.
+Pay as you go.
+
+{{% pricing-header %}}
+{{% /pricing-header %}}
+
+{{% /text-section %}}
+
+
+{{% text-section %}}
+{{% figure-left-pricing %}}
+
+
+### COST BREAKDOWN
+
+* No setup, monthly, or hidden fees.
+* Real-time fee reporting.
+* Pay only for what you use.
+
+**Receive a weekly invoice with the following details:**
+
+{{% /figure-left-pricing %}}
+
+---
+
+{{% figure-left-pricing img="teacher.png" %}}
+
+#### Teacher salary
+
+**GROUP LESSON**
+
+* The salary is fixed and doesn’t depend on the number pupils
+  attending the virtual class.
+
+* The cost of group classes can be shared with other schools from the
+  Zamenhof network.
+
+The teacher's salary depends on (1)the course type and (2)the package
+renewal rate. When ever a student purchases a package of **at least 4
+lessons,** the teacher will receive a higher salary per lesson according to the list below.
+
+<details>
+<summary>View example</summary>
+<p>
+If a student purchases a 10-lesson package with Teacher A, Teacher A will receive $6.00 per lesson.
+
+If the same student purchases a second package of 10 lessons with Teacher A, Teacher A will receive $6.50 per lesson.
+
+If the same student purchases a third package, but instead will have 3 lessons with Teacher A, and 7 lessons with Teacher B, the cost will be as follows:
+
+* Teacher A will be $6.50 per lesson.
+* Teacher B will be $6.00 per lesson.
+</p>
+</details>
+
+**Native teacher** salary per 25-minute lesson
+
+{.pricing-table}
+|                  | Group          | 1-On-1                   |
+| :--------------- | :------------- | :----------------------- |
+| General Topic    | $7.00          | Min $6.00 - Max $8.00  * |
+| Exam Preparation | $8.00          | Min $7.00 - Max $9.00  * |
+| Specialized      | $9.00          | Min $8.00 - Max $10.00 * |
+| Exam Evaluation  | $10.00         | $10                      |
+Table: * $0.50 increment for each package renewed
+
+**Non-native** teacher salary per 25-minute lesson
+
+{.pricing-table}
+|                  | Group          | 1-On-1                   |
+| :--------------- | :------------- | :----------------------- |
+| General Topic    | $3.00          | Min $3.00 - Max $4.00  * |
+| Exam Preparation | $4.00          | Min $4.00 - Max $5.00  * |
+| Specialized      | $5.00          | Min $5.00 - Max $6.00  * |
+| Exam Evaluation  | N/A            | $5                       |
+Table: * $0.50 increment for each package renewed
+
+{{% /figure-left-pricing %}}
+
+---
+
+{{% figure-left-pricing img="zcmission.png" %}}
+
+### Commission
+The commission per lesson depends on the format (group or 1-on-1), the course type and the number of lessons your school holds per week (per billing cycle)
+
+{.pricing-table}
+|                  | Group          <th> 1-On-1                   </th>
+| :--------------- | :-------------
+| General Topic    | $3.00          <td rowspan="4">$2.00 per lesson.<br/> After 1,000 lessons, enjoy a $0.10<br> discount per additional 100<br> lessons/week up to $1/month. *</td>
+| Exam Preparation | $4.00
+| Specialized      | $5.00
+| Exam Evaluation  | N/A
+Table: Note that it is also possible to share a virtual classroom with another school. When a virtual classroom is shared, each school will have to pay the teacher's salary and the Zamenhof commission based on the number of their own students attending the class.
+
+Commission per 25-minute lesson:
+
+{{% /figure-left-pricing  %}}
+
+---
+
+{{% figure-left-pricing img="connectionfee.png" %}}
+
+### Connection fee
+
+From your Administrator Panel, you will have full control over the price
+you charge your students for the connection (landline/mobile phone)
+
+You will be charged by Zamenhof the exact sum in US dollars that
+Twilio is currently charging.
+
+The amount depends on the country.
+[Click here to see the pricing from the Twilio website.](https://www.twilio.com/voice/pricing)
+
+The exact amount you are charged will be visible from the work order.
+
+You can also download the list of lessons in .csv format to view the cost
+of the connection for each and every lesson.
+
+{{% /figure-left-pricing  %}}
+{{% /text-section %}}
+
+{{% text-section class="section-bg-grey" %}}
+{{% figure-left-pricing  %}}
+
+### OTHER SERVICES
+
+In addition to our teaching services, the Zamenhof team is composed of a
+team of specialized evaluators working 24/7.
+
+{{% /figure-left-pricing  %}}
+
+---
+
+{{% figure-left-pricing img="services.png" %}}
+### Lead Response (Free Evaluation)
+
+In addition to our teaching service, the Zamenhof team is composed of
+a team of specialized evaluators working 24/7 to call back the leads
+from the partner schools.
+
+The "White-labeled" evaluators work on behalf of your school for the first contact with the leads who signed up for a free evaluation from
+your website.
+
+Instruction video about the free evaluation process.
+The pricing for the free evaluation is:
+
+$3 per completed evaluation
+$6 bonus when that evaluation converts into a sale (of a package of
+at least 4 lessons).
+
+{{% /figure-left-pricing %}}
+
+---
+
+{{% figure-left-pricing img="setup.png" %}}
+
+### Setup assistance
+
+Need help getting started?
+
+We have helped many schools seamlessly integrate Zamenhof into their system.
+
+[Contact us](mailto:service@zamenhof.net) and let us know how we can help.
+
+{{% /figure-left-pricing %}}
+{{% /text-section %}}
+
+
+{{% grow-section %}}
+
+# Grow Your Online Business Today
+
+{{% /grow-section %}}
