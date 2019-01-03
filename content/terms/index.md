@@ -107,7 +107,6 @@ service@zamenhof.net
 var hashLinks = document.querySelectorAll("a[href^='#']");
 [].forEach.call(hashLinks, function (link) {
   link.addEventListener("click", function (event) {
-console.log('ddd');
     event.preventDefault();
     history.pushState({}, "", link.href);
     
@@ -116,5 +115,11 @@ console.log('ddd');
     history.back();
   });
 });
-    history.pushState({}, "", "#terms-of-service");
+
+if (!window.location.hash) {
+  history.pushState({}, "", "#terms-of-service");
+} else {
+  history.pushState({}, "", window.location.hash);
+  history.back();
+}
 </script>

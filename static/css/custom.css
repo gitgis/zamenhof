@@ -561,3 +561,35 @@ div:last-child > .figure-dialog__img {
     height: 480px;
     margin-bottom: 160px;
 }
+
+
+.cookie-footer {
+    display: flex;
+    bottom: -140px;
+
+    padding: 20px;
+    background-color: rgba(28, 66, 120, 0.9);
+    color: #FFF;
+    font-size: 14px;
+
+    transition: bottom 1s;
+}
+
+.cookie-footer > p {
+    flex: 1;
+}
+
+.cookie-footer__button {
+    font-size: 14px;
+    height: 40px;
+    padding: 9px 36px;
+    min-width: 136px;
+    border: none;
+    border-radius: 3px;
+
+    background: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+
+    cursor: pointer;
+    outline: none;
+}

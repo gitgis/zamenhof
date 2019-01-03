@@ -9,6 +9,7 @@ theme = "zamenhof-hugo-theme"
 [params]
 
 includeBootstrapJs = true
+cookieConsent = true
 
 [menu]
 

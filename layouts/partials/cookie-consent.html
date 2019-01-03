@@ -1,0 +1,29 @@
+{{ if eq .Site.Params.cookieConsent true }}
+<footer class="cookie-footer fixed-bottom">
+    <p>
+        By clicking "Continue" or continuing to use our site, you acknowledge that you accept our
+        <a href="/terms/#privacy-policy">Privacy Notice</a>.
+        Feel free to check out our policies anytime for more information.
+    </p>
+  <button class="cookie-footer__button" type="button">Continue</button>
+</footer>
+
+<script>
+window.addEventListener("load", function() {
+    var box = document.querySelector('.cookie-footer');
+
+    var button = document.querySelector('.cookie-footer__button');
+    button.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        box.style.display = "none";
+        window.localStorage.setItem("cookie_accepted", "accepted");
+    });
+
+    const val = window.localStorage.getItem("cookie_accepted");
+    if (!val) {
+        box.style.bottom = 0;
+    }
+
+});
+</script>
+{{ end }}
