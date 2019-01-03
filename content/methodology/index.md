@@ -199,4 +199,3 @@ This video will give you a clear idea of how every teacher is able to complete a
 
 {{% /text-section %}}
 
-
