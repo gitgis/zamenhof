@@ -31,14 +31,30 @@
 
   {{ $bootstrapCss := "css/bootstrap.min.css" }}
   <link rel="stylesheet" href="{{ $bootstrapCss | absURL }}" />
-  {{ $css := resources.Get "css/custom.css" }}
-  {{ $style := $css | resources.PostCSS | minify | fingerprint }}
+
+{{ if .Site.IsServer }}
+
+  {{ $vars := printf "@import 'css/custom.css' " | resources.FromString "css/custom.css" }}
+  {{ $style := $vars | resources.PostCSS (dict "noMap" false) | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
   {{ range .Page.Params.css_files }}
-  {{ $css := resources.Get . }}
-  {{ $style := $css | resources.PostCSS | minify | fingerprint }}
+  {{ $vars := printf "@import '%s';" . | resources.FromString . }}
+  {{ $style := $vars | resources.PostCSS (dict "noMap" false) | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
   {{ end }}
+
+{{ else }}
+  <link rel="stylesheet" href="{{ $bootstrapCss | absURL }}" />
+  {{ $vars := printf "@import 'css/custom.css' " | resources.FromString "css/custom.css" }}
+  {{ $style := $vars | resources.PostCSS (dict "noMap" true) | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+  {{ range .Page.Params.css_files }}
+  {{ $vars := printf "@import '%s';" . | resources.FromString . }}
+  {{ $style := $vars | resources.PostCSS (dict "noMap" true) | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+  {{ end }}
+{{ end }}
 
   <link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic|Roboto+Mono:300,400|Lato:400" rel="stylesheet" type="text/css">
