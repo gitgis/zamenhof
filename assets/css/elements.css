@@ -24,25 +24,24 @@ blockquote {
 }
 
 h1 {
-    text-align: center;
     font-size: 26px;
     font-weight: 700;
+    text-align: left;
     margin: 0;
 }
 
 h2 {
+    font-size: 20px;
+    line-height: 40px;
     font-weight: 700;
     text-align: left;
-    font-size: 36px;
-    line-height: 40px;
 }
 
 h3 {
     font-size: 14px;
     font-weight: 700;
-    color: #1e3a6e;
-    margin-bottom:5px;
     text-align: left;
+    margin-bottom: 5px;
 }
 
 ol, ul {

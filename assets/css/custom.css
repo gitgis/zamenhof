@@ -5,6 +5,10 @@
 @import "cookie-footer.css";
 @import "request-modal.css";
 
+.container {
+    padding: 0 !important;
+}
+
 .text-section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -19,19 +23,33 @@
     */
 }
 
+.text-section h1 {
+    text-align: center;
+}
+
 .page-footer {
     padding: 35px 0;
     margin: auto;
     background: #05152a;
     width: 100%;
 }
+
 .page-footer h2 {
     color: #abb5c4;
     font-size: 20px;
+    text-transform: none;
+    font-weight: 500;
 }
+
 .page-footer p {
     color: #abb5c4;
     font-size: 16px;
+}
+@media (max-width: 1199px) {
+    .page-footer p {
+        color: #abb5c4;
+        font-size: 13px;
+    }
 }
 
 .page-footer__mobile {
@@ -58,6 +76,11 @@ a.page-footer__important-link {
     align-items: center;
 }
 
+.figure-left__caption h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
 .row-space {
     padding: 70px;
 }
@@ -66,6 +89,15 @@ a.page-footer__important-link {
     text-align: center;
     margin: 40px 0;
     padding: 44px 0;
+}
+
+.grow-section h1 {
+    text-align: center;
+}
+
+.grow-section a {
+    font-size: 16px;
+    color: #1e3a6e !important;
 }
 
 .grow-section__request_button {
@@ -78,11 +110,6 @@ a.page-footer__important-link {
     width: 205px;
     margin: 20px 0;
     color: #FFF !important;
-}
-
-.grow-section a {
-    font-size: 16px;
-    color: #1e3a6e !important;
 }
 
 .figure-dialog__img {

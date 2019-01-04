@@ -7,7 +7,7 @@
     background-color: rgb(28, 66, 120);
     color: #FFF;
     text-align: center;
-    padding-top: 30px !important;
+    padding: 30px 0 !important;
     border-bottom: none !important;
 }
 
@@ -17,8 +17,8 @@
     text-transform: none;
     font-weight: 400;
     font-size: 30px;
-    line-height: 54px;
-    margin: 0;
+    line-height: 33px;
+    margin: 2px;
 }
 
 .section-welcome em {
@@ -30,6 +30,7 @@
     font-size: 18px;
     line-height: 22px;
     color: rgb(161, 177, 206);
+    margin: 10px auto 10px;
 }
 
 .section-welcome__computer-container {

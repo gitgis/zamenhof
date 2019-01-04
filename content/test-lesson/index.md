@@ -73,49 +73,49 @@ There are seven tasks that need to be completed for a test lesson to be successf
 
 * You need to send the welcome template email to notify the student that you will contact him/her at the time scheduled.  
   You don’t need to write an email but just send a template which is already adapted to the situation.
-* Click on the letter icon
-* Click on the link “Click here to send the template…”
-* Click the green button “Send solve”.
+ * Click on the letter icon
+ * Click on the link “Click here to send the template…”
+ * Click the green button “Send solve”.
 
 **Task 2**: Assign the content for the lesson
 
 * The “content” is what you will talk about during the lesson. It might be already preassigned or you might have to assign it. Check the “unit” column, if it is yellow and written “add”, you have to assign the content:
-* click on the “add” link
-* click any of the links to view the list of lessons
-* click on the lesson that seems interesting for you (you can view the lesson by clicking on the “view” button).
+ * click on the “add” link
+ * click any of the links to view the list of lessons
+ * click on the lesson that seems interesting for you (you can view the lesson by clicking on the “view” button).
 
 # - During -
 
 **Task 3**: Call the student on time
 
 * It is strongly recommended to make a test call before the lesson to make sure your equipment is working and is synchronized with our program.
-* Click on the link from last column on the right side.
-* The “call_box” window will open. Click on the green “Call” button. If the student don’t answer, click on any of the grey call button.
-* Once the student picks the phone, present yourself and get started. You can use the “ice breaker” as way to smooth the first contact.
+ * Click on the link from last column on the right side.
+ * The “call_box” window will open. Click on the green “Call” button. If the student don’t answer, click on any of the grey call button.
+ * Once the student picks the phone, present yourself and get started. You can use the “ice breaker” as way to smooth the first contact.
 
 **Task 4**: Take notes during the lesson
 
 * (important) ask questions in relation with the content! The student will have access to the assigned contact from the student panel and will probably prepare for the lesson. He/she is expecting you to ask relevant questions in relation with the assigned content.
-When the student is saying something wrong, write the mistake in the “mistake box” and your correction in the “teachers’ correction” box. Feel free to use all the other boxes to assign notes according to their respective categories.
+** When the student is saying something wrong, write the mistake in the “mistake box” and your correction in the “teachers’ correction” box. Feel free to use all the other boxes to assign notes according to their respective categories.
 [Click here to view an example](https://goo.gl/rJSWGY)
 
 # - After -
 
 **Task 5**: Assign the student a homework
 
-* be attentive to the most prominent mistake the student did during the test lesson.
-* Find in our homework database a homework according to that mistake.
-* Consult the homework database to view the available homework.
-* Write a summary of the lesson at the bottom of the call_box notes section.
+ * be attentive to the most prominent mistake the student did during the test lesson.
+ * Find in our homework database a homework according to that mistake.
+ * Consult the homework database to view the available homework.
+ * Write a summary of the lesson at the bottom of the call_box notes section.
 
 **Task 6**: Send/post the course notes
 
-* Simply click the “Send” button.
+ * Simply click the “Send” button.
 
 **Task 7**: Report the attendance
 
-* If the lesson was completed, click the “yes” link in the “attendance” column. Note that this link will appear only after the lesson.
-* If the student didn’t show up, click on the “no” link and fill the report.
+ * If the lesson was completed, click the “yes” link in the “attendance” column. Note that this link will appear only after the lesson.
+ * If the student didn’t show up, click on the “no” link and fill the report.
 
 {{% /figure-right %}}
 
