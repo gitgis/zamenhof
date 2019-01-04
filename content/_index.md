@@ -16,11 +16,9 @@ url: "/"
 **White-label** Online Language Tutoring Platform **for Language Schools, Higher Education and Companies.**
 
 
-{{% video-in-computer /%}}
-
-
 {{% /text-section %}}
 
+{{% video-in-computer /%}}
 
 {{% text-section %}}
 
