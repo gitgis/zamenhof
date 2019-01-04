@@ -2,6 +2,8 @@
 title: "Profit"
 date: 2019-01-03T20:33:20+01:00
 type: "page"
+css_files:
+  - "css/profit.css"
 ---
 
 {{% page-header %}}
@@ -21,8 +23,7 @@ type: "page"
 
 
 
-{{% profit-calculator %}}
-{{% /profit-calculator %}}
+{{% profit-calculator /%}}
 
 
 

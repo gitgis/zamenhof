@@ -1,0 +1,33 @@
+.tabs-control {
+    position: relative;
+    display: table;
+    margin: 40px auto;
+    padding: 0 15px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 0 1px rgba(20,31,51,.1);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tabs-control li {
+    display: inline-block;
+    padding: 15px;
+    color: #97A0A8;
+}
+
+#terms-of-service:target {
+    display: block;
+}
+#terms-of-service:not(:target) {
+    display: none;
+}
+
+#privacy-policy:not(:target) {
+    display: none;
+}
+#privacy-policy:target {
+    display: block;
+}

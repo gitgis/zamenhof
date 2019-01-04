@@ -3,6 +3,8 @@ title: "pricing"
 date: 2019-01-02T20:24:45+01:00
 publishdate: 2019-01-02
 lastmod: 2019-01-02
+css_files:
+  - "css/pricing.css"
 ---
 
 {{% text-section class="section-welcome section-pricing" %}}

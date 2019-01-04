@@ -2,6 +2,8 @@
 title: "Terms & Policies"
 date: 2019-01-02T14:05:37+01:00
 type: "page"
+css_files:
+  - "css/terms.css"
 ---
 
 {{% page-header %}}

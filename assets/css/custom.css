@@ -1,0 +1,140 @@
+@import "elements.css";
+@import "navbar.css";
+@import "page-header.css";
+@import "homepage.css";
+@import "cookie-footer.css";
+
+.text-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(20,31,51,.1);
+    /*
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    */
+}
+
+.page-footer {
+    padding: 35px 0;
+    margin: auto;
+    background: #05152a;
+    width: 100%;
+}
+.page-footer h2 {
+    color: #abb5c4;
+    font-size: 20px;
+}
+.page-footer p {
+    color: #abb5c4;
+    font-size: 16px;
+}
+
+.page-footer__mobile {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a.page-footer__important-link {
+    color:#f7931d !important;
+    font-weight:900;
+}
+
+.page-footer__divider {
+    background:#F7931D;
+    width:100%;
+    height:0px;
+    margin:30px 0;
+}
+
+.figure-left__caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-space {
+    padding: 70px;
+}
+
+.grow-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 44px 0;
+}
+
+.grow-section__request_button {
+    border: 1px solid #f7931d;
+    text-align: center;
+    border-radius: 5px;
+    height: 50px;
+    background: #f7931d;
+    padding: 10px 10px;
+    width: 205px;
+    margin: 20px 0;
+    color: #FFF !important;
+}
+
+.grow-section a {
+    font-size: 16px;
+    color: #1e3a6e !important;
+}
+
+.figure-dialog__img {
+    margin: auto;
+    display: block;
+    max-width: 65%;
+}
+
+div:first-child > .figure-dialog__img {
+    margin-right: 0;
+}
+div:last-child > .figure-dialog__img {
+    margin-left: 0;
+}
+
+.figure-dialog p {
+    text-align: center;
+}
+
+.figure-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.figure-icons-list p {
+    width: 100%;
+    text-align: center;
+}
+
+.figure-icons-list figure {
+    flex: 1;
+    min-width: 130px;
+    max-width: 130px;
+    padding: 0 10px;
+}
+
+.figure-icons-list figure > img {
+    margin: 0 25px 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.figure-icons-list h4 {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.wistia-video img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    height: auto;
+}

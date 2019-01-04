@@ -2,6 +2,8 @@
 title: "About us"
 type: page
 date: 2019-01-02T10:35:55+01:00
+css_files:
+  - "css/about.css"
 ---
 
 {{% page-header %}}

@@ -2,6 +2,8 @@
 title: "Setup"
 date: 2019-01-03T21:51:49+01:00
 type: "page"
+css_files:
+  - "css/setup-plans.css"
 ---
 
 {{% page-header %}}
