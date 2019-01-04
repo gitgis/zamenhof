@@ -210,4 +210,6 @@ div:last-child > .figure-dialog__img {
 
 iframe.tscplayer_inline {
     max-width: 100%;
+    margin: auto;
+    display: block;
 }

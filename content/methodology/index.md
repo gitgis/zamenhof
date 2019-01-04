@@ -126,7 +126,7 @@ Depending on the students’ connection speed, it is possible to use the video c
 
 **Student Point of View** This video was made by a school from the Zamenhof network. It demonstrates in details the use of the Zamenhof platform.
 
-<iframe class="tscplayer_inline embeddedObject" style="overflow: hidden;" src="http://www.screencast.com/users/nouxious/folders/Camtasia/media/adc04967-a354-4187-9269-2cce0d5f8822/embed" name="tsc_player" width="948" height="592" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
+<iframe class="tscplayer_inline embeddedObject" style="overflow: hidden;" src="https://www.screencast.com/users/nouxious/folders/Camtasia/media/adc04967-a354-4187-9269-2cce0d5f8822/embed" name="tsc_player" width="948" height="592" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
 
 {{% /text-section %}}
 
