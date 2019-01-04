@@ -17,7 +17,7 @@ css_files:
 # Set your expected number of lessons _per week_
 
 <div class="slidecontainer">
-  <input type="range" min="0" max="20" value="0" class="slider" id="lessons_per_week_slider">
+  <input type="range" min="0" max="100" value="0" class="slider" id="lessons_per_week_slider">
 </div>
 {{% /text-section %}}
 
