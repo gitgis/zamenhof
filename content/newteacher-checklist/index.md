@@ -27,7 +27,7 @@ If you have any questions, contact us at [service@zamenhof.net](mailto:service@z
 ### 1. The structure of the Zamenhof Network
  
  
-{{% wistia-video wistia_id="dwwj7of3rx" %}}
+{{% wistia-video wistia_id="dwwj7of3rx" disable_icon="true" %}}
 
 Watch this video about the structure of the Zamenhof Network.
 

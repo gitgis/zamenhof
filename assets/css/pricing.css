@@ -73,8 +73,17 @@
     font-weight: 400;
 }
 
-
 .section-pricing {
-    height: 480px;
-    margin-bottom: 160px;
+}
+
+@media (min-width: 768px) {
+    .section-pricing {
+        height: 480px;
+        margin-bottom: 160px;
+    }
+}
+
+.pricing-icon {
+    max-width: 77%;
+    float: right;
 }

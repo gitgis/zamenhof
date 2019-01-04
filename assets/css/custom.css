@@ -132,9 +132,24 @@ div:last-child > .figure-dialog__img {
     font-weight: 600;
 }
 
+.wistia-video {
+    position: relative;
+}
+
 .wistia-video img {
     display: block;
     margin: auto;
     max-width: 80%;
     height: auto;
+}
+
+.wistia-video__icon {
+    z-index: 9;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }

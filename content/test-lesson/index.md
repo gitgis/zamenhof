@@ -146,11 +146,8 @@ When the student is saying something wrong, write the mistake in the “mistake 
 
 {{% text-section %}}
 
-
 {{% wistia-video wistia_id="vw66q2y4g6" %}}
-
-![](video.png)
-
-
+![Test lesson video](video.png)
 {{% /wistia-video %}}
+
 {{% /text-section %}}
