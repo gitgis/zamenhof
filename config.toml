@@ -1,15 +1,17 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Language Lessons Online with YOUR students and OUR teachers."
-theme = "zamenhof-hugo-theme"
+description = "Zamenhof.net is a White-label Online Language Tutoring Platform for Language Schools."
+theme = "minimal-bootstrap-hugo-theme"
 
 [permalinks]
   page = "/:filename/"
 
 [params]
 
-includeBootstrapJs = true
-cookieConsent = true
+  includeBootstrapJs = true
+  cookieConsent = true
+  googleAnalytics = "UA-TODO-1"
 
 [menu]
 

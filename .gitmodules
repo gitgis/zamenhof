@@ -1,12 +1,3 @@
-[submodule "themes/zamenhof-hugo-theme"]
-	path = themes/zamenhof-hugo-theme
-	url = git@github.com:gitgis/zamenhof-hugo-theme.git
-[submodule "themes/hugo-zamenhof"]
-	path = themes/hugo-zamenhof
-	url = git@github.com:ggodlewski/hugo-zamenhof.git
-[submodule "gitgis/zamenhof-hugo-academic"]
-	path = gitgis/zamenhof-hugo-academic
-	url = git@github.com:gitgis/zamenhof-hugo-academic.git
-[submodule "themes/zamenhof-hugo-academic"]
-	path = themes/zamenhof-hugo-academic
-	url = git@github.com:gitgis/zamenhof-hugo-academic.git
+[submodule "themes/minimal-bootstrap-hugo-theme"]
+	path = themes/minimal-bootstrap-hugo-theme
+	url = https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git
