@@ -205,7 +205,6 @@ window.addEventListener("load", function() {
         numbers = document.querySelectorAll("span.number.decimal");
         for(var x = 0; x < numbers.length; x++) {
             var element = numbers.item(x);
-            console.log(element);
             element.innerText = addCommas(element.innerText.toString().replace(',', ''), false)
                 .toString()
                 .replace('.00', '');
@@ -310,6 +309,15 @@ window.addEventListener("load", function() {
         zamenhof_pricing_calculate_total();
         thousands_separator_for_figures();
     });
+
+    pricing_average_sales_price_per_lesson_elem.addEventListener('change', function () {
+        var exact_amount_of_lessons = slider.value;
+        var earnings = exact_amount_of_lessons * parseFloat(pricing_average_sales_price_per_lesson_elem.value);
+        pricing_average_sales_price_amount_elem.innerText = (earnings);
+        zamenhof_pricing_calculate_total();
+        thousands_separator_for_figures();
+    });
+
 
     function zamenhof_pricing_calculate_total() {
         var total_expenses = 0,
