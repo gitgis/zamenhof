@@ -1,9 +1,38 @@
 <div class="grow-section">
     {{.Inner}}
     <div>
-        <button class="grow-section__request_button">Request Access</button>
+        <button onclick="$('.request-modal-container').css('display','flex');" class="grow-section__request_button">Request Access</button>
     </div>
     <div>
         <a href="https://admin.zamenhof.net/login">Already have an account?</a>
+    </div>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <div class="request-modal-container">
+        <div class="close-hitbox" onclick="$('.request-modal-container').css('display','none');"></div>
+        <div class="container container-1" style="padding:0px;">
+            <div class="content">
+            <form id="partner_application_form"  action="#" method="post" enctype="multipart/form-data">
+                <h3>Welcome to Zamenhof</h3>
+                <p>Fill in your details and we will be in touch with you shortly.</p>
+                <div class="g-recaptcha" id="g-recaptcha" data-sitekey="6LfHdygTAAAAAGZlhjC7LJg_lUXU4io07tqfci2d" data-callback="clickrecaptcha" original-title="Please tick the captcha" style="width:100%;"></div>
+
+                <input type="email" class="email" id="email" name="email" placeholder="email@example.com" original-title="Please enter valid email address" />
+                <input type="hidden" name="captcha" id="captcha" value="0">
+                <input type="hidden" name="action" id="action" value="partner_application">
+                <button type="button" class="button" onclick="submit_application();">Submit</button>
+                <!--<table cellpadding="0" cellspacing="0" border="0" class="table">
+                <tr><td><div style="width:97%;border-bottom:1px solid #ddd;margin:0;float:left;"></div></td></tr>
+                <tr><td><input type="text" class="email" id="email" name="email" placeholder="email@example.com" original-title="Please enter valid email address" /></td></tr>
+                <tr><td><div class="g-recaptcha" id="g-recaptcha" data-sitekey="6LfHdygTAAAAAGZlhjC7LJg_lUXU4io07tqfci2d" data-callback="clickrecaptcha" original-title="Please tick the captcha" ></div></td></tr>
+                <tr><td><div class="g-recaptcha" id="g-recaptcha" ></div></td></tr>
+                <input type="hidden" name="captcha" id="captcha" value="0" />
+                <input type="hidden" name="action" id="action" value="partner_application" />
+                <tr><td></td></tr>
+                </table>-->
+            </form>
+        </div>
+        </div>
     </div>
 </div>

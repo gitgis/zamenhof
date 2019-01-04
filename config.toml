@@ -47,7 +47,7 @@ theme = "minimal-bootstrap-hugo-theme"
   [[menu.main]]
       identifier = "request-access"
       name = "Request Access"
-      url = "javascript:void(0);"
+      url = "javascript:$('.request-modal-container').css('display','flex');"
       weight = 6
 
 

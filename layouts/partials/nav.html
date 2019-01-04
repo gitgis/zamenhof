@@ -14,7 +14,7 @@
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
       <li class="nav-item {{if eq $.URL .URL }} active{{ end }} nav-item--{{ .Identifier }}">
-        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        <a class="nav-link" {{ printf "href=%q" .URL | safeHTMLAttr }}>{{ .Name }}</a>
       </li>
       {{ end }}
     </ul>

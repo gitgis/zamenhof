@@ -1,0 +1,223 @@
+.modal-content {
+    background-color: transparent;
+    border: none;
+    box-shadow: none
+}
+
+.modal-header {
+    border: none
+}
+
+.request-modal-container {
+    align-items: center;
+    animation-direction: normal;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: fade-in;
+    animation-timing-function: cubic-bezier(0.125, 0.5, 0.125, 1);
+    background-color: rgba(20, 31, 51, 0.75);
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.modal-container .close-hitbox:hover, .request-modal-container .close-hitbox:hover {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    opacity: .5;
+}
+
+.modal-container .close-hitbox::after, .request-modal-container .close-hitbox::after {
+
+    content: "";
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: url(https://admin.zamenhof.net/zamenhof2/img/cross-20.svg) center no-repeat;
+    background-size: 40px;
+    margin: 20px;
+    -webkit-filter: drop-shadow(0 4px 2px rgba(20, 31, 51, .25));
+    filter: drop-shadow(0 4px 2px rgba(20, 31, 51, .25));
+    opacity: .25;
+    transition: opacity 125ms;
+    cursor: pointer;
+}
+
+.modal-container .close-hitbox, .request-modal-container .close-hitbox {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+.request-modal-container .container {
+    animation-direction: normal;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: fade-in-up;
+    animation-timing-function: cubic-bezier(0.125, 0.5, 0.125, 1);
+    background: #fff none repeat scroll 0 0;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(44, 61, 80, 0.2);
+    position: relative;
+    text-align: center;
+    width: 450px !important;
+    min-height: 260px;
+}
+
+.request-modal-container .container .button {
+    background: #f7931d;
+    box-shadow: none;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    width: 29%;
+    float: right;
+    margin-top: 10px;
+    font-weight: 900;
+}
+
+.request-modal-container .container .email {
+    width: 220px;
+    border: none;
+    padding: 0 5px;
+    height: 40px;
+    text-align: center;
+    font-size: 110%;
+}
+
+.request-modal-container .container .email:focus {
+    outline-width: 0;
+    outline: none;
+}
+
+.request-modal-container .container .table td {
+    text-align: center;
+    padding: 5px 0;
+    width: 300px;
+}
+
+.g-recaptcha {
+    transform: scale(0.99); /*transform-origin:0 0;*/
+}
+
+.bigger {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.medium {
+    font-size: 115%;
+}
+
+.smaller {
+    font-size: 90%;
+}
+
+@media (max-width: 320px) {
+    .request-modal-container .container {
+        width: 300px !important;
+        padding: 0px;
+    }
+
+    .request-modal-container .container .email {
+        width: 280px;
+        border: none;
+        padding: 0 5px;
+        height: 40px;
+    }
+
+    .request-modal-container .container .table td {
+        text-align: center;
+        padding: 5px 0;
+        width: 280px;
+    }
+
+    .g-recaptcha {
+        transform: scale(0.93); /*transform-origin:0 0;*/
+    }
+}
+
+.request-modal-container .container .content {
+    padding: 30px 75px;
+}
+
+.request-modal-container .container h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #26334D;
+    text-align: center !important;
+}
+
+.request-modal-container .container p {
+    font-size: 16px;
+    max-width: 350px;
+    line-height: 1.6;
+}
+
+.request-modal-container .container input:not([type="radio"]) {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    margin: 10px 0;
+    width: 71%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+
+.mobile_footer {
+    width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+    .mobile_footer {
+        width: 94%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+    .request-modal-container .container .content {
+        padding: 30px 0px;
+    }
+
+    .request-modal-container .container input:not([type="radio"]) {
+        width: 65%;
+    }
+
+    .request-modal-container .container .button {
+        width: 27%;
+        margin-right: 10px;
+    }
+}
