@@ -141,3 +141,7 @@ input[type=range]:focus::-ms-fill-upper {
 .col-expenses h3 {
     color: #DB2D1C;
 }
+
+.table-expenses input[type=number] {
+    max-width: 5em;
+}
