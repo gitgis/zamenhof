@@ -87,3 +87,28 @@
     max-width: 77%;
     float: right;
 }
+
+.fa-pricing {
+    fill: #b3daa4;
+    width: 15px;
+    height: 15px;
+}
+
+.fa-arrow-circle-o-right li {
+    list-style: none;
+}
+
+.fa-arrow-circle-o-right li::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+
+    line-height: 10px;
+    vertical-align: middle;
+
+    background-color: #b3daa4;
+    -webkit-mask-image: url("/img/fa/arrow-circle-right.svg");
+    -webkit-mask-size: cover;
+}
