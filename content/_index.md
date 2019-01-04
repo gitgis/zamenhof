@@ -11,7 +11,7 @@ url: "/"
 
 ## Language Lessons Online
 
-## with _YOUR_ students and _OUR_ teachers
+### with _YOUR_ students and _OUR_ teachers
 
 **White-label** Online Language Tutoring Platform **for Language Schools, Higher Education and Companies.**
 

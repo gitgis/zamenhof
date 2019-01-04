@@ -96,6 +96,8 @@ Table: * $0.50 increment for each package renewed
 ### Commission
 The commission per lesson depends on the format (group or 1-on-1), the course type and the number of lessons your school holds per week (per billing cycle)
 
+Commission per 25-minute lesson:
+
 {.pricing-table}
 |                  | Group          <th> 1-On-1                   </th>
 | :--------------- | :-------------
@@ -104,8 +106,6 @@ The commission per lesson depends on the format (group or 1-on-1), the course ty
 | Specialized      | $5.00
 | Exam Evaluation  | N/A
 Table: Note that it is also possible to share a virtual classroom with another school. When a virtual classroom is shared, each school will have to pay the teacher's salary and the Zamenhof commission based on the number of their own students attending the class.
-
-Commission per 25-minute lesson:
 
 {{% /figure-left-pricing  %}}
 

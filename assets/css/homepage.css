@@ -20,6 +20,23 @@
     line-height: 33px;
     margin: 2px;
 }
+.section-welcome h3 {
+    color: #FFF;
+    text-align: center;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    margin: 2px;
+}
+@media (max-width: 415px) {
+    .section-welcome h2 {
+        font-size: 20px;
+    }
+    .section-welcome h3 {
+        font-size: 30px;
+    }
+}
 
 .section-welcome em {
     border-bottom: 2px solid #f7931d;
