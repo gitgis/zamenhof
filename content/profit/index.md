@@ -12,22 +12,12 @@ css_files:
 
 {{% /page-header %}}
 
-
-{{% text-section %}}
+{{< text-section >}}
+{{% div %}}
 # Set your expected number of lessons _per week_
+{{% /div %}}
 
-<div class="slidecontainer">
-  <input type="range" min="0" max="100" value="0" class="slider" id="lessons_per_week_slider">
-</div>
-{{% /text-section %}}
-
-
-
-{{% profit-calculator /%}}
-
-
-
-{{% text-section %}}
+{{< profit-calculator />}}
 
 {{% container-row %}}
 

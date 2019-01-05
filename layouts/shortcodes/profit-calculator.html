@@ -1,8 +1,12 @@
-<div class="profit-calculator">
+<div class="slidecontainer">
+    <input type="range" min="0" max="100" value="0" class="slider" id="lessons_per_week_slider">
+</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
+{{.Inner}}
+
+<div class="profit-calculator">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
 
             <table class="table table-striped table-sm table-sales">
                 <thead>
@@ -24,78 +28,80 @@
                 </tbody>
             </table>
 
-            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <table class="table table-striped table-sm table-earnings">
+                <thead>
+                <tr><th colspan="2">Earnings</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td title="The average sale price per lesson is $14">
+                        <span>Average Sales Price Per Lesson</span>
+                    </td>
+                    <td>
+                        <select id="pricing_average_sales_price_per_lesson">
+                            <option value="10">$10</option>
+                            <option value="11">$11</option>
+                            <option value="12">$12</option>
+                            <option value="13">$13</option>
+                            <option value="14" selected="selected">$14</option>
+                            <option value="15">$15</option>
+                            <option value="16">$16</option>
+                            <option value="17">$17</option>
+                            <option value="18">$18</option>
+                            <option value="19">$19</option>
+                            <option value="20">$20</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>per week</strong></td>
+                    <td>$<span class="number" id="pricing_average_sales_price_amount">0.00</span></td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <table class="table table-striped table-sm table-profit">
+                <thead>
+                <tr><th colspan="2">Profit</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>per week</strong></td>
+                    <td>$<span class="number" id="pricing_profit_per_week">0</span></td>
+                </tr>
+                <tr>
+                    <td><strong>per month</strong></td>
+                    <td>$<span class="number" id="pricing_profit_per_month">0</span></td>
+                </tr>
+                <tr>
+                    <td><strong>per year</strong></td>
+                    <td>$<span class="number" id="pricing_profit_per_year">0</span></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
-
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <table class="table table-striped table-sm table-earnings">
-                    <thead>
-                    <tr><th colspan="2">Earnings</th></tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td title="The average sale price per lesson is $14">
-                            <span>Average Sales Price Per Lesson</span>
-                            <select id="pricing_average_sales_price_per_lesson">
-                                <option value="10">$10</option>
-                                <option value="11">$11</option>
-                                <option value="12">$12</option>
-                                <option value="13">$13</option>
-                                <option value="14" selected="selected">$14</option>
-                                <option value="15">$15</option>
-                                <option value="16">$16</option>
-                                <option value="17">$17</option>
-                                <option value="18">$18</option>
-                                <option value="19">$19</option>
-                                <option value="20">$20</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>$<span class="number" id="pricing_average_sales_price_amount">0.00</span></td>
-                    </tr>
-                    </tbody>
-                </table>
-
-
-                <table class="table table-striped table-sm table-profit">
-                    <thead>
-                    <tr><th colspan="2">Profit</th></tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><strong>per week</strong></td>
-                        <td>$<span class="number" id="pricing_profit_per_week">0</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>per month</strong></td>
-                        <td>$<span class="number" id="pricing_profit_per_month">0</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>per year</strong></td>
-                        <td>$<span class="number" id="pricing_profit_per_year">0</span></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <table class="table table-sm table-striped table-expenses">
-                    <thead>
-                    <tr><th colspan="3">Expenses</th></tr>
-                    </thead>
-                    <tbody>
-                    <tbody>
-                    <tr>
-                        <td>Average Teacher Salary</td>
-                        <td title="The salary per lesson depends on the course type and the renewal rate.">$<span class="number" id="pricing_average_teacher_salary_rate">7</span></td>
-                        <td>$<span class="number" id="pricing_average_teacher_salary" title="The salary per lesson depends on the course type and the renewal rate.">0</span></td>
-                    </tr>
-                    <tr>
-                        <td>Commission to Zamenhof</td>
-                        <td title="From 1 to 1100 = $2
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <table class="table table-sm table-striped table-expenses">
+                <thead>
+                <tr><th colspan="3">Expenses</th></tr>
+                </thead>
+                <tbody>
+                <tbody>
+                <tr>
+                    <td>Average Teacher Salary</td>
+                    <td title="The salary per lesson depends on the course type and the renewal rate.">$<span class="number" id="pricing_average_teacher_salary_rate">7</span></td>
+                    <td>$<span class="number" id="pricing_average_teacher_salary" title="The salary per lesson depends on the course type and the renewal rate.">0</span></td>
+                </tr>
+                <tr>
+                    <td>Commission to Zamenhof</td>
+                    <td title="From 1 to 1100 = $2
 From 1101 to 1200 = $1.90
 From 1201 to 1300 = $1.80
 From 1301 to 1400 = $1.70
@@ -106,45 +112,40 @@ From 1701 to 1800 = $1.30
 From 1801 to 1900 = $1.20
 From 1901 to 2000 = $1.10
 From 2001 to 3000 = $1.00">$<span class="number decimal" id="pricing_commission_to_zamenhof_rate">2.00</span></td>
-                        <td>$<span class="number" id="pricing_commission_to_zamenhof">0.00</span></td>
-                    </tr>
-                    <tr>
-                        <td>Minimum Invoice Charge</td>
-                        <td>$<span class="number" id="pricing_minimum_invoice_charge_rate">25</span></td>
-                        <td>$<span class="number" id="pricing_minimum_invoice_charge">0</span></td>
-                    </tr>
-                    <tr>
-                        <td>Connection Fees</td>
-                        <td>$0</td>
-                        <td>$<span class="number" id="pricing_connection_fees">0</span></td>
-                    </tr>
-                    <tr>
-                        <td>Weekly publicity budget</td>
-                        <td>&nbsp;</td>
-                        <td>$<input type="number" id="pricing_weekly_publicity_budget" value="0"></td>
-                    </tr>
-                    <tr>
-                        <td>Administrator Salary (per week)</td>
-                        <td>&nbsp;</td>
-                        <td>$<input type="number" id="pricing_administrator_salary_per_week" value="0"></td>
-                    </tr>
-                    <tr class="total">
-                        <td>Total Expenses</td>
-                        <td>&nbsp;</td>
-                        <td>$<span class="number" id="pricing_expenses_total">0</span></td>
-                    </tr>
-                    </tbody>
-                    <caption>All prices are in USD</caption>
-                </table>
-            </div>
+                    <td>$<span class="number" id="pricing_commission_to_zamenhof">0.00</span></td>
+                </tr>
+                <tr>
+                    <td>Minimum Invoice Charge</td>
+                    <td>$<span class="number" id="pricing_minimum_invoice_charge_rate">25</span></td>
+                    <td>$<span class="number" id="pricing_minimum_invoice_charge">0</span></td>
+                </tr>
+                <tr>
+                    <td>Connection Fees</td>
+                    <td>$0</td>
+                    <td>$<span class="number" id="pricing_connection_fees">0</span></td>
+                </tr>
+                <tr>
+                    <td>Weekly publicity budget</td>
+                    <td>&nbsp;</td>
+                    <td>$<input type="number" id="pricing_weekly_publicity_budget" value="0"></td>
+                </tr>
+                <tr>
+                    <td>Administrator Salary (per week)</td>
+                    <td>&nbsp;</td>
+                    <td>$<input type="number" id="pricing_administrator_salary_per_week" value="0"></td>
+                </tr>
+                <tr class="total">
+                    <td>Total Expenses</td>
+                    <td>&nbsp;</td>
+                    <td>$<span class="number" id="pricing_expenses_total">0</span></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-
-
 </div>
 
-{{.Inner}}
-
+<hr/>
 
 <script>
 window.addEventListener("load", function() {
@@ -361,5 +362,4 @@ window.addEventListener("load", function() {
 
     }
 });
-
 </script>
