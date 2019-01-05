@@ -84,8 +84,15 @@
 }
 
 .pricing-icon {
+    margin: auto;
+    display: block;
     max-width: 77%;
-    float: right;
+}
+
+@media (min-width: 576px) {
+    .pricing-icon {
+        float: right;
+    }
 }
 
 .fa-pricing {

@@ -22,20 +22,20 @@ Pay as you go.
 {{% figure-left-pricing %}}
 
 
-### COST BREAKDOWN
+## COST BREAKDOWN
 
 {.fa-arrow-circle-o-right}
 * No setup, monthly, or hidden fees.
 * Real-time fee reporting.
 * Pay only for what you use.
 
-**Receive a weekly invoice with the following details:**
+<strong>Receive a weekly invoice with the following details:</strong>
 
 {{% /figure-left-pricing %}}
 
----
-
 {{% figure-left-pricing img="teacher.png" %}}
+
+---
 
 ## Teacher salary
 
@@ -89,11 +89,11 @@ Table: * $0.50 increment for each package renewed
 
 {{% /figure-left-pricing %}}
 
----
-
 {{% figure-left-pricing img="zcmission.png" %}}
 
-### Commission
+---
+
+## Commission
 The commission per lesson depends on the format (group or 1-on-1), the course type and the number of lessons your school holds per week (per billing cycle)
 
 Commission per 25-minute lesson:
@@ -109,11 +109,11 @@ Table: Note that it is also possible to share a virtual classroom with another s
 
 {{% /figure-left-pricing  %}}
 
----
-
 {{% figure-left-pricing img="connectionfee.png" %}}
 
-### Connection fee
+---
+
+## Connection fee
 
 From your Administrator Panel, you will have full control over the price
 you charge your students for the connection (landline/mobile phone)
@@ -122,7 +122,8 @@ You will be charged by Zamenhof the exact sum in US dollars that
 Twilio is currently charging.
 
 The amount depends on the country.
-[Click here to see the pricing from the Twilio website.](https://www.twilio.com/voice/pricing)
+
+<a href="https://www.twilio.com/voice/pricing" target="_blank">Click here to see the pricing from the Twilio website.</a>
 
 The exact amount you are charged will be visible from the work order.
 
@@ -135,17 +136,18 @@ of the connection for each and every lesson.
 {{% text-section class="section-bg-grey" %}}
 {{% figure-left-pricing  %}}
 
-### OTHER SERVICES
+## OTHER SERVICES
 
 In addition to our teaching services, the Zamenhof team is composed of a
 team of specialized evaluators working 24/7.
 
 {{% /figure-left-pricing  %}}
 
+{{% figure-left-pricing img="services.png" %}}
+
 ---
 
-{{% figure-left-pricing img="services.png" %}}
-### Lead Response (Free Evaluation)
+## Lead Response (Free Evaluation)
 
 In addition to our teaching service, the Zamenhof team is composed of
 a team of specialized evaluators working 24/7 to call back the leads
@@ -160,23 +162,22 @@ Instruction video about the free evaluation process.
 
 The pricing for the free evaluation is:
 
-$3 per completed evaluation
-$6 bonus when that evaluation converts into a sale (of a package of
-at least 4 lessons).
+* $3 per completed evaluation
+* $6 bonus when that evaluation converts into a sale (of a package of at least 4 lessons).
 
 {{% /figure-left-pricing %}}
 
----
-
 {{% figure-left-pricing img="setup.png" %}}
 
-### Setup assistance
+---
+
+## Setup assistance
 
 Need help getting started?
 
 We have helped many schools seamlessly integrate Zamenhof into their system.
 
-[Contact us](mailto:service@zamenhof.net) and let us know how we can help.
+<a href="mailto:service@zamenhof.net" target="_blank">Contact us</a> and let us know how we can help.
 
 {{% /figure-left-pricing %}}
 {{% /text-section %}}
