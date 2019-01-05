@@ -2,6 +2,8 @@
 title: "How It Works"
 date: 2019-01-02T14:00:07+01:00
 type: "page"
+css_files:
+ - "css/how-it-works.css" 
 ---
 
 {{% page-header %}}
@@ -10,7 +12,7 @@ type: "page"
 
 {{% /page-header %}}
 
-{{% text-section class="row-space" %}}
+{{% text-section class="row-space how-step" %}}
 {{% figure-left img="picture_hiw.png" %}}
 
 ## STEP 1
@@ -22,7 +24,7 @@ type: "page"
 {{% /text-section %}}
 
 
-{{% text-section class="section-bg-grey row-space" %}}
+{{% text-section class="section-bg-grey row-space how-step" %}}
 {{% figure-left img="school_per.png" %}}
 
 ## STEP 2
@@ -35,7 +37,7 @@ register on your website
 
 
 
-{{% text-section class="row-space" %}}
+{{% text-section class="row-space how-step" %}}
 {{% figure-left img="school_hiw3.png" %}}
 
 
@@ -48,7 +50,7 @@ during the evaluation
 {{% /figure-left %}}
 {{% /text-section %}}
 
-{{% text-section class="row-space section-bg-grey" %}}
+{{% text-section class="section-bg-grey row-space how-step" %}}
 {{% figure-left img="school_4.png" %}}
 
 ## STEP 4
@@ -60,7 +62,7 @@ plan!
 {{% /figure-left %}}
 {{% /text-section %}}
 
-{{% text-section class="row-space" %}}
+{{% text-section class="row-space how-step" %}}
 {{% figure-left img="school_hiw5.png" %}}
 
 ## STEP 5
@@ -74,7 +76,7 @@ report about your cost & profit
 
 
 
-{{% text-section class="row-space section-bg-grey" %}}
+{{% text-section class="section-bg-grey row-space how-step" %}}
 {{% figure-left img="customize.png" %}}
 
 ## Customize

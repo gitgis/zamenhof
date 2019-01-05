@@ -1,0 +1,5 @@
+@media (min-width: 576px) {
+    .how-step .figure-left__caption > div {
+        min-width: 250px;
+    }
+}
