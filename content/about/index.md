@@ -94,8 +94,11 @@ Our team consists of 50+ Native language speakers from around the world.
 {{% team-person 
     name="You" 
     fullname="Come Work at Zamenhof" 
-    title="" 
-    photo="you.png" %}}
+    title=""
+    img_class="team-person--you" 
+    photo="/about/envelope.svg" %}}
+    
+    
    
 Are you passionate about edtech? We're looking for self-motivated, skilled engineers.
 

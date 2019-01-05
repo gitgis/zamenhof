@@ -2,13 +2,21 @@
 {{- $name := .Get "name" -}}
 {{- $fullname := .Get "fullname" -}}
 {{- $title := .Get "title" -}}
-
-{{ $original := .Page.Resources.GetMatch (printf "*%s*" $photo) }}
-{{ .Scratch.Set "image" ($original.Fit "90x110 q80") }}
-{{ $image := .Scratch.Get "image" }}
+{{- $img_class := .Get "img_class" -}}
 
 <div class="team-person">
-    <div class="team-person__photo" ><img src="{{$image.RelPermalink}}"></div>
+    <div class="team-person__photo" >
+{{ if findRE ".svg$" $photo  }}
+<span class="team-person__svg {{ $img_class }}">
+{{ readFile $photo | safeHTML }}
+</span>
+{{ else }}
+        {{ $original := .Page.Resources.GetMatch (printf "*%s*" $photo) }}
+        {{ .Scratch.Set "image" ($original.Fit "90x110 q80") }}
+        {{ $image := .Scratch.Get "image" }}
+        <img src="{{$image.RelPermalink}}" />
+{{ end }}
+    </div>
     <div class="team-person__name">{{$name}}</div>
     <div class="team-person__blurb">
         <h4 class="team-person__fullname">{{$fullname}}</h4>

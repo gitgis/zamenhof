@@ -218,3 +218,8 @@ iframe.tscplayer_inline {
     margin: auto;
     display: block;
 }
+
+.section-bg-grey {
+    background: #fafafb;
+    border-bottom: 1px solid #eee;
+}

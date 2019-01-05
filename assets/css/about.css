@@ -30,6 +30,14 @@
     box-shadow: 0 0 0 1px rgba(20,31,51,.1), 0 2px 4px rgba(20,31,51,.05);
     overflow: hidden;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-person__svg {
+    display: block;
 }
 
 .team-person__photo img {
@@ -85,4 +93,10 @@
     line-height: 22px;
     margin: 0;
     max-width: 510px;
+}
+
+.team-person--you svg {
+    width: 50px;
+    height: 50px;
+    fill: #05142A;
 }
