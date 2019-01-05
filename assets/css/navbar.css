@@ -25,11 +25,14 @@
 
 .navbar-brand {
     position: relative;
-    height: 86px;
+    height: 71px;
     padding: 15px;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
+    .navbar-brand {
+        height: 86px;
+    }
     .navbar-brand {
         width: 100%;
         text-align: center;
