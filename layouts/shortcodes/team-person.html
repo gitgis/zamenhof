@@ -11,10 +11,7 @@
 {{ readFile $photo | safeHTML }}
 </span>
 {{ else }}
-        {{ $original := .Page.Resources.GetMatch (printf "*%s*" $photo) }}
-        {{ .Scratch.Set "image" ($original.Fit "90x110 q80") }}
-        {{ $image := .Scratch.Get "image" }}
-        <img src="{{$image.RelPermalink}}" />
+        <img src="{{$photo}}" />
 {{ end }}
     </div>
     <div class="team-person__name">{{$name}}</div>
