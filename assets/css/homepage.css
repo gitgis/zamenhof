@@ -127,7 +127,6 @@
 }
 
 .video-in-computer__big, .video-in-computer__video {
-    /*--laptop-size: 27.81vw;*/
     --video-size: 43.98vw;
 }
 
@@ -162,17 +161,83 @@
 @media (min-width: 768px) {
     .video-in-computer__laptop {
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: calc(1.9 * var(--video-size));
         height: calc(1.11 * var(--video-aspect) * var(--video-size));
     }
 
     .video-in-computer__video {
         position: absolute;
-        left: calc(0.455 * var(--video-size));
         top: 0;
+        left: calc(0.455 * var(--video-size));
         width: var(--video-size);
         height: calc(var(--video-aspect) * var(--video-size));
     }
 }
+
+
+/* MSIE ZONE: */
+@media (min-width: 990px) {
+    .video-in-computer__big {
+        width: calc(1.9 * 534px);
+        height: calc(1.11 * var(--video-aspect) * 534px);
+    }
+    .video-in-computer__laptop {
+        width: calc(1.9 * 534px);
+        height: calc(1.11 * var(--video-aspect) * 534px);
+    }
+    .video-in-computer__video {
+        left: calc(0.455 * 534px);
+        width: 534px;
+        height: calc(var(--video-aspect) * 534px);
+    }
+}
+
+@media (min-width: 768px) {
+    .video-in-computer__big {
+        width: calc(1.9 * 341px);
+        height: calc(1.11 * var(--video-aspect) * 341px);
+    }
+    .video-in-computer__laptop {
+        width: calc(1.9 * 341px);
+        height: calc(1.11 * var(--video-aspect) * 341px);
+    }
+    .video-in-computer__video {
+        left: calc(0.455 * 341px);
+        width: 341px;
+        height: calc(var(--video-aspect) * 341px);
+    }
+}
+@media (min-width: 992px) {
+    .video-in-computer__big {
+        width: calc(1.9 * 442px);
+        height: calc(1.11 * var(--video-aspect) * 442px);
+    }
+    .video-in-computer__laptop {
+        width: calc(1.9 * 442px);
+        height: calc(1.11 * var(--video-aspect) * 442px);
+    }
+    .video-in-computer__video {
+        left: calc(0.455 * 442px);
+        width: 442px;
+        height: calc(var(--video-aspect) * 442px);
+    }
+}
+@media (min-width: 1200px) {
+    .video-in-computer__big {
+        width: calc(1.9 * 533px);
+        height: calc(1.11 * var(--video-aspect) * 533px);
+    }
+    .video-in-computer__laptop {
+        width: calc(1.9 * 533px);
+        height: calc(1.11 * var(--video-aspect) * 533px);
+
+    }
+    .video-in-computer__video {
+        left: calc(0.455 * 533px);
+        width: 533px;
+        height: calc(var(--video-aspect) * 533px);
+    }
+}
+/* /MSIE ZONE: */
