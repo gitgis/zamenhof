@@ -13,7 +13,7 @@ css_files:
 {{% /page-header %}}
 
 {{% text-section class="row-space how-step" %}}
-{{% figure-left img="picture_hiw.png" %}}
+{{% figure-left img="picture_hiw.svg" %}}
 
 ## STEP 1
 
@@ -25,7 +25,7 @@ css_files:
 
 
 {{% text-section class="section-bg-grey row-space how-step" %}}
-{{% figure-left img="school_per.png" %}}
+{{% figure-left img="school_per.svg" %}}
 
 ## STEP 2
 
@@ -38,7 +38,7 @@ register on your website
 
 
 {{% text-section class="row-space how-step" %}}
-{{% figure-left img="school_hiw3.png" %}}
+{{% figure-left img="school_hiw3.svg" %}}
 
 
 ## STEP 3
@@ -51,7 +51,7 @@ during the evaluation
 {{% /text-section %}}
 
 {{% text-section class="section-bg-grey row-space how-step" %}}
-{{% figure-left img="school_4.png" %}}
+{{% figure-left img="school_4.svg" %}}
 
 ## STEP 4
 
@@ -63,7 +63,7 @@ plan!
 {{% /text-section %}}
 
 {{% text-section class="row-space how-step" %}}
-{{% figure-left img="school_hiw5.png" %}}
+{{% figure-left img="school_hiw5.svg" %}}
 
 ## STEP 5
 
@@ -77,7 +77,7 @@ report about your cost & profit
 
 
 {{% text-section class="section-bg-grey row-space how-step" %}}
-{{% figure-left img="customize.png" %}}
+{{% figure-left img="customize.svg" %}}
 
 ## Customize
 

@@ -1,11 +1,14 @@
 <div class="section-welcome__computer-container">
     <div class="section-welcome__bg"></div>
 
-    <img class="video-in-computer__small" src="/homepage/computer-screen-1.png" alt="Computer with Zamenhof" />
+    <picture class="video-in-computer__small">
+        <source type="image/webp" srcset="/homepage/computer-screen-1.webp" />
+        <source type="image/png" srcset="/homepage/computer-screen-1.png" />
+        <img src="/homepage/computer-screen-1.png" alt="Computer with Zamenhof" />
+    </picture>
 
     <div class="video-in-computer__big">
         <video class="video-in-computer__video" autoplay="" muted="" src="/video/virtual-class.mp4" loop="" mute=""></video>
-
         <object class="video-in-computer__laptop" type="image/svg+xml" data="/homepage/computer-screen.svg" class="logo">
         </object>
     </div>

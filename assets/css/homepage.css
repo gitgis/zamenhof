@@ -93,10 +93,12 @@
 .video-in-computer__small {
     display: none;
 }
-.video-in-computer__laptop {
-    display: none;
+.video-in-computer__small > * {
+    width: 100%;
+    height: auto;
 }
-.video-in-computer__video {
+
+.video-in-computer__big {
     display: none;
 }
 
@@ -106,10 +108,7 @@
     }
 }
 @media (min-width: 768px) {
-    .video-in-computer__laptop {
-        display: block;
-    }
-    .video-in-computer__video {
+    .video-in-computer__big {
         display: block;
     }
 }
