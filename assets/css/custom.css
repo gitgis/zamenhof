@@ -213,6 +213,11 @@ div:last-child > .figure-dialog__img {
     pointer-events: none;
 }
 
+.wistia-video__icon > * {
+    width: 100%;
+    height: auto;
+}
+
 iframe.tscplayer_inline {
     max-width: 100%;
     margin: auto;

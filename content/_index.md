@@ -25,7 +25,7 @@ url: "/"
 # White-label Teaching Staff
 
 
-{{% figure-dialog left-img="homepage/your-school.png" right-img="homepage/your-school-1.png" %}}
+{{% figure-dialog left-img="homepage/your-school.svg" right-img="homepage/your-school-1.svg" %}}
 
 Get instant access to a team of certified native English speaking teachers  
 working on behalf of your school
@@ -38,7 +38,7 @@ working on behalf of your school
 
 # Academic Content
 
-{{% figure-dialog left-img="homepage/your-school-3.png" right-img="homepage/your-school-2b.png" %}}
+{{% figure-dialog left-img="homepage/your-school-3.svg" right-img="homepage/your-school-2b.svg" %}}
 
 Get instant access to a full library of language courses.
 
@@ -71,12 +71,11 @@ All in one place! No other software needed
 
 # Zamenhof, Explained In Three Minutes
 
-{{% wistia-video wistia_id="va49hseg3x" %}}
-
-![](homepage/home_03.png)
-
-{{% /wistia-video %}}
-
+{{< wistia-video wistia_id="va49hseg3x" >}}
+{{< webp src="homepage/home_03.webp" >}}
+<img src="homepage/home_03.png" alt="Zamenhof, Explained In Three Minutes" />
+{{< /webp >}}
+{{< /wistia-video >}}
 
 {{% /text-section %}}
 

@@ -1,0 +1,6 @@
+{{- $src := .Get "src" -}}
+
+<picture class="webp">
+    <source type="image/webp" srcset="{{ $src }}" />
+    {{.Inner}}
+</picture>
