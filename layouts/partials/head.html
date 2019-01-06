@@ -28,18 +28,21 @@
   <meta name="twitter:description" content="Zamenhof.net is a White-label Online Language Tutoring Platform for Language Schools.">
   <meta name="twitter:image" content="https://zamenhof.net/logo_zam_meta.png">
 
-  {{ $favicon16x16 := "img/favicon.png" }}
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16x16 | absURL }}">
+  {{/* https://www.emergeinteractive.com/insights/detail/The-Essentials-of-FavIcons */}}
 
-  {{ $siteWebmanifest := "site.webmanifest" }}
-  <link rel="manifest" href="{{ $siteWebmanifest | absURL }}">
+  {{ $ioriginal := resources.Get "apple-icon-512x512.png" }}
+  {{ $original := resources.Get "favicon-512x512.png" }}
+  {{ $Scratch := .Scratch }}
 
-  {{ $safariPinnedTab := "safari-pinned-tab.svg" }}
-  <link rel="mask-icon" href="{{ $safariPinnedTab | absURL }}" color="{{ .Site.Params.faviconSafariPinnedTabColor }}">
+  {{ range .Site.Params.iphone_sizes }}
+  {{ $Scratch.Set "image" ($ioriginal.Fit .) }}{{ $image := $Scratch.Get "image" }}
+  <link rel="apple-touch-icon" href="{{ $image.RelPermalink | absURL }}" sizes="{{ . }}">
+  {{ end }}
 
-  <meta name="msapplication-TileColor" content="{{ .Site.Params.faviconMsApplicationTileColor }}">
-
-  <meta name="theme-color" content="{{ .Site.Params.faviconThemeColor }}">
+  {{ range .Site.Params.favicon_sizes }}
+  {{ $Scratch.Set "image" ($original.Fit .) }}{{ $image := $Scratch.Get "image" }}
+  <link rel="icon" href="{{ $image.RelPermalink | absURL }}" sizes="{{ . }}">
+  {{ end }}
 
   {{ $bootstrapCss := "css/bootstrap.min.css" }}
   <link rel="stylesheet" href="{{ $bootstrapCss | absURL }}" />
