@@ -33,7 +33,7 @@ Pay as you go.
 
 {{% /figure-left-pricing %}}
 
-{{% figure-left-pricing img="teacher.png" %}}
+{{% figure-left-pricing img="teacher.svg" %}}
 
 ---
 
@@ -89,7 +89,7 @@ Table: * $0.50 increment for each package renewed
 
 {{% /figure-left-pricing %}}
 
-{{% figure-left-pricing img="zcmission.png" %}}
+{{% figure-left-pricing img="zcmission.svg" %}}
 
 ---
 
@@ -109,7 +109,7 @@ Table: Note that it is also possible to share a virtual classroom with another s
 
 {{% /figure-left-pricing  %}}
 
-{{% figure-left-pricing img="connectionfee.png" %}}
+{{% figure-left-pricing img="connectionfee.svg" %}}
 
 ---
 
@@ -143,7 +143,7 @@ team of specialized evaluators working 24/7.
 
 {{% /figure-left-pricing  %}}
 
-{{% figure-left-pricing img="services.png" %}}
+{{% figure-left-pricing img="services.svg" %}}
 
 ---
 
@@ -167,7 +167,7 @@ The pricing for the free evaluation is:
 
 {{% /figure-left-pricing %}}
 
-{{% figure-left-pricing img="setup.png" %}}
+{{% figure-left-pricing img="setup.svg" %}}
 
 ---
 
