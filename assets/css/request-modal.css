@@ -1,3 +1,5 @@
+@import "tooltip.css";
+
 .modal-content {
     background-color: transparent;
     border: none;
@@ -76,9 +78,12 @@
     border-radius: 4px;
     box-shadow: 0 20px 40px rgba(44, 61, 80, 0.2);
     position: relative;
-    text-align: center;
     width: 450px !important;
     min-height: 260px;
+}
+
+.request-modal-container p {
+    text-align: center;
 }
 
 .request-modal-container .container .button {

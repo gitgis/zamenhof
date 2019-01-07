@@ -1,0 +1,23 @@
+<div class="request-modal-container">
+    <div class="close-hitbox" onclick="$('.request-modal-container').css('display','none');"></div>
+    <div class="container container-1" style="padding:0px;">
+        <div class="content">
+            <form id="partner_application_form" onsubmit="submit_application(event)" >
+                <h3>Welcome to Zamenhof</h3>
+                <p>Fill in your details and we will be in touch with you shortly.</p>
+                <div class="g-recaptcha" id="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_sitekey }}"
+                     data-callback="clickrecaptcha"
+                     tooltip="Please tick the captcha"></div>
+                <div id="email-container" tooltip="Enter email address" >
+                    <input type="email" class="email" id="email" name="email" placeholder="email@example.com" />
+                    <button type="submit" class="button" >Submit</button>
+                </div>
+                <input type="hidden" name="captcha" id="captcha" value="0">
+                <input type="hidden" name="action" id="action" value="partner_application">
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="/js/request-access.js"></script>
