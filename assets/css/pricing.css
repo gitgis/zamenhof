@@ -116,6 +116,6 @@
     vertical-align: middle;
 
     background-color: #b3daa4;
-    -webkit-mask-image: url("/img/fa/arrow-circle-right.svg");
+    -webkit-mask-image: url("../img/fa/arrow-circle-right.svg");
     -webkit-mask-size: cover;
 }
