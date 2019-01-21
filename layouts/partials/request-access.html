@@ -6,9 +6,8 @@
                 <h3>Welcome to Zamenhof</h3>
                 <p>Fill in your details and we will be in touch with you shortly.</p>
                 <div class="g-recaptcha" id="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_sitekey }}"
-                     data-callback="clickrecaptcha"
-                     tooltip="Please tick the captcha"></div>
-                <div id="email-container" tooltip="Enter email address" >
+                     data-callback="clickrecaptcha"></div>
+                <div id="email-container" class="form-line" >
                     <input type="email" class="email" id="email" name="email" placeholder="email@example.com" />
                     <button type="submit" class="button" >Submit</button>
                 </div>

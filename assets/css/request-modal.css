@@ -86,60 +86,13 @@
     text-align: center;
 }
 
-.request-modal-container .container .button {
-    background: #f7931d;
-    box-shadow: none;
-    border-radius: 60px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    border: none;
-    padding: 14px;
-    cursor: pointer;
-    width: 29%;
-    float: right;
-    margin-top: 10px;
-    font-weight: 900;
-}
-
-.request-modal-container .container .email {
-    width: 220px;
-    border: none;
-    padding: 0 5px;
-    height: 40px;
-    text-align: center;
-    font-size: 110%;
-}
-
 .request-modal-container .container .email:focus {
     outline-width: 0;
     outline: none;
 }
 
-.request-modal-container .container .table td {
-    text-align: center;
-    padding: 5px 0;
-    width: 300px;
-}
-
 .g-recaptcha {
     transform: scale(0.99); /*transform-origin:0 0;*/
-}
-
-.bigger {
-    font-size: 150%;
-    font-weight: bold;
-}
-
-.medium {
-    font-size: 115%;
-}
-
-.smaller {
-    font-size: 90%;
 }
 
 @media (max-width: 320px) {
@@ -185,18 +138,42 @@
     line-height: 1.6;
 }
 
-.request-modal-container .container input:not([type="radio"]) {
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
-    margin: 10px 0;
-    width: 71%;
-    height: 50px;
+
+.form-line {
+    display: flex;
+}
+
+.request-modal-container .button {
+    background: #f7931d;
+    box-shadow: none;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
     border: none;
-    font-size: 16px;
-    line-height: 26px;
-    color: #333;
+    padding: 14px;
+    cursor: pointer;
+    /*float: right;*/
+    margin-top: 10px;
+    font-weight: 900;
+    outline: none;
+}
+
+.request-modal-container .email {
+    width: 200px;
+    flex: 1;
+    border: none;
+    padding: 0 5px;
+    margin: 10px 0;
+
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+
     text-align: left;
 }
 
