@@ -1,0 +1,53 @@
+---
+title: "Contact"
+date: 2019-01-02T20:24:45+01:00
+publishdate: 2019-01-02
+lastmod: 2019-01-02
+css_files:
+  - "css/contact.css"
+---
+
+{{% text-section class="section-welcome section-contact" %}}
+
+## Contact us
+
+Our team is happy to answer your questions.
+
+Fill out the form and we'll be in touch as sson as possible.
+
+{{% contact-header %}}
+{{% /contact-header %}}
+
+{{% /text-section %}}
+
+
+{{% text-section %}}
+
+{{% container-row %}}
+
+{{% container-col %}}
+### General communication 
+
+For general queries, including partnership opportunities please email service@zamenhof.net
+{{% /container-col %}}
+
+
+{{% container-col %}}
+### Teacher support
+
+If you are already working with us, please use the contact admin menu from teacher account.
+{{% /container-col %}}
+
+{{% /container-row %}}
+
+
+{{% /text-section %}}
+
+
+
+
+{{% grow-section %}}
+
+# Grow Your Online Business Today
+
+{{% /grow-section %}}
