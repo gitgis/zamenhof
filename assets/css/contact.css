@@ -46,3 +46,24 @@
     line-height: 13px !important;
     font-size: 12px !important;
 }
+
+
+
+.contact-modal-container {
+    align-items: center;
+    animation-direction: normal;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: fade-in;
+    animation-timing-function: cubic-bezier(0.125, 0.5, 0.125, 1);
+    background-color: rgba(20, 31, 51, 0.75);
+    bottom: 0;
+    justify-content: center;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}

@@ -1,137 +1,123 @@
-function clickrecaptcha(){
-    $('#captcha').val(1);
-    $("#g-recaptcha").attr('tooltip', null);
+function clickrecaptcha_contact(aa) {
+    document.querySelector('.g-recaptcha').removeAttribute('tooltip');
 }
 
-$(function() {
+function doModal(title, message) {
 
-    $('#email').click (function(){
-        $("#email-container").attr('tooltip', null);
-    });
 
-    $('.close-hitbox').click(function(){
-        $("#email-container").attr('tooltip', null);
-        $("#g-recaptcha").attr('tooltip', null);
+    var html =  '<div class="modal hide fade in">';
+
+    html += '<div class="modal-dialog" role="document">';
+    html += '<div class="modal-content">';
+
+    html += '<div class="modal-header">';
+    html += '<h5 class="modal-title">'+title+'</h5>';
+    html += '<a class="close" data-dismiss="modal">×</a>';
+    html += '</div>';
+    
+    html += '<div class="modal-body">';
+    html += '<p>';
+    html += message;
+    html += '</div>';
+    
+    html += '<div class="modal-footer">';
+    html += '<button class="btn btn-primary" data-dismiss="modal">Close</button>'; // close button
+    html += '</div>';  // footer
+    html += '</div>';  // modalWindow
+    
+    const div = document.createElement('div');
+    div.innerHTML = html;
+    
+    document.body.appendChild(div);
+    
+    $(div.children[0]).modal().on('hidden.bs.modal', function (e) {
+        document.body.removeChild(div);
     });
-});
+}
 
 function submit_contact(event) {
     event.preventDefault();
     event.stopPropagation();
+    
+    var form = event.target;
+    var data = new FormData(form);
 
+    console.log('submit_contact', form.elements, data);
+    
+    var fields = ['first_name', 'last_name', 'email', 'website', 'volume', 'g-recaptcha-response'];
+    fields.forEach(function (fieldName) {
+        var element = form.querySelector('[name="'+fieldName+'"]');
+        element.addEventListener('focus', function () {
+            element.parentElement.removeAttribute('tooltip');
+        });
+    });
+    
     var err=0;
 
-    if($('#email').val().length==0){
+    if(data.get('first_name').length==0){
         err=1;
-        $('#email-container').attr('tooltip','Please enter email address.');
-    } else if(!isEmail($('#email').val())) {
-        $('#email-container').attr('tooltip','Please enter valid email address.');
+        form.querySelector('[name="first_name"]').parentElement.setAttribute('tooltip','Please enter first name.');
+    }
+
+    if(data.get('last_name').length==0){
+        err=1;
+        form.querySelector('[name="last_name"]').parentElement.setAttribute('tooltip','Please enter last name.');
+    }
+
+    if(data.get('email').length==0){
+        err=1;
+        form.querySelector('[name="email"]').parentElement.setAttribute('tooltip','Please enter email address.');
+    } else if(!isEmail(data.get('email'))) {
+        form.querySelector('[name="email"]').parentElement.setAttribute('tooltip','Please enter valid email address.');
         err=1;
     }
 
-    if($('#captcha').val()==0){
+    if(data.get('website').length==0){
         err=1;
-        $('#g-recaptcha').attr('tooltip','Please click the captcha.');
+        form.querySelector('[name="website"]').parentElement.setAttribute('tooltip','Please enter website.');
+    }
+
+    if(data.get('volume').length==0){
+        err=1;
+        form.querySelector('[name="volume"]').parentElement.setAttribute('tooltip','Please enter volume.');
+    }
+
+    if(!data.get('g-recaptcha-response')){
+        err=1;
+        form.querySelector('.g-recaptcha').setAttribute('tooltip','Please click the captcha.');
     }
 
     if(err==1){
         return false;
     }
 
-    var data=$('#partner_application_form').serializeArray();
-
-    fetch("http://204.48.28.216/index.php",
+    fetch(form.getAttribute('action'),
         {
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Accept": "application/json",
             },
             method: "POST",
-            body: JSON.stringify(data)
+            body: data
         })
         .then(function(res){
             console.log(res);
             if (res.ok) {
-                $('.container-1').css('background','#179b09');
+                form.style.backgroundColor = '#179b09';
             } else {
-                $('.container-1').css('background','#d10e0e');
+                form.style.backgroundColor = '#d10e0e';
             }
 
             res.json().then(function (msg) {
-                $('.content').css({'color':'#fff','font-size':'150%'});
-                $('.content').hide();
-                $('.content')
-                    .html(msg)
-                    .css({'padding':'30px','display':'table-cell','vertical-align':'middle','height':'230px','width':'420px'});
-                $('.content').show('slow');
+                console.log(msg);
+                doModal('Contact', msg);
             })
 
         })
         .catch(function(res){
-            console.error(res)
-            $('.content').html('Some error occured, please try again later.'.res);
+            console.error(res);
+            doModal('Contact', 'Some error occurred, please try again later.');
         });
 
     return true;
-}
-
-function isEmail(email) {
-    email=email.toLowerCase();
-    var n = email.search("gmail");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("yahoo");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("aol");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("hotmail");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("msn.com");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("rediffmail");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("yandex");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("outlook");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("zoho");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("mail.com");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("inbox.com");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("icloud");
-    if(n>-1){
-        return false;
-    }
-    n = email.search("indiatimes");
-    if(n>-1){
-        return false;
-    }
-
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    f=regex.test(email);
-
-    return f;
 }

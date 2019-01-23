@@ -1,6 +1,6 @@
 @import "tooltip.css";
 
-.modal-content {
+.request-modal-container .modal-content {
     background-color: transparent;
     border: none;
     box-shadow: none
