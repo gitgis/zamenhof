@@ -16,7 +16,7 @@
 @media (min-width: 768px) {
     .section-contact {
         height: 590px;
-        margin-bottom: 160px;
+        margin-bottom: 220px;
     }
 }
 
@@ -66,4 +66,45 @@
     right: 0;
     top: 0;
     z-index: 9999;
+}
+
+
+
+.fa-at {
+    fill: #b3daa4;
+    width: 44px;
+    height: 44px;
+    margin-left: 11px;
+
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+
+    line-height: 10px;
+    vertical-align: middle;
+
+    background-color: #1e3a6e;
+    -webkit-mask-image: url("../img/fa/at-solid.svg");
+    -webkit-mask-size: cover;
+}
+
+.fa-chalkboard-teacher {
+    fill: #b3daa4;
+    width: 55px;
+    height: 44px;
+
+    content: "";
+    display: inline-block;
+    /*margin-right: 8px;*/
+
+    line-height: 10px;
+    vertical-align: middle;
+
+    background-color: #1e3a6e;
+    -webkit-mask-image: url("../img/fa/chalkboard-teacher-solid.svg");
+    -webkit-mask-size: cover;
+}
+
+.col-icon {
+    max-width: 70px;
 }

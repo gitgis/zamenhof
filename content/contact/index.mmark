@@ -26,16 +26,32 @@ Fill out the form and we'll be in touch as sson as possible.
 {{% container-row %}}
 
 {{% container-col %}}
-### General communication 
 
+<div class="row">
+<div class="col col-icon">
+<div class="fa-at"></div>
+</div> 
+<div class="col">
+<h3>General communication</h3> 
 For general queries, including partnership opportunities please email service@zamenhof.net
+</div> 
+</div> 
+
 {{% /container-col %}}
 
 
 {{% container-col %}}
-### Teacher support
 
+<div class="row">
+<div class="col col-icon">
+<div class="fa-chalkboard-teacher"></div>
+</div> 
+<div class="col">
+<h3>Teacher support</h3>
 If you are already working with us, please use the contact admin menu from teacher account.
+</div> 
+</div> 
+
 {{% /container-col %}}
 
 {{% /container-row %}}
